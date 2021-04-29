@@ -1,2 +1,6 @@
-# Ziyuan-Daniel_DCMMs
-STA-663 Final project
+# DCMMs
+Dynamic Count Mixture Models
+
+DCMMs is designed for easy use of Dynamic Count Mixture Models proposed by Lindsay Berry and Mike West in 2018. The core function is dcmm_analysis. It also provides functions that display examples directly, such as sim_example(), real_example(), dglm_example(), glm_example. Each of these functions will output a visualization to demonstrate the model results. sim_example() (simulated data example) and real_example() (real data example) wrap dcmm_analysis inside, thus they are DCMMs examples, while dglm_example() and glm_example() are competitors of DCMMs, one for Dynamic Generalized Linear Models and the other for static Generalized Linear Models. Example data are stored in Examples_data folder and users can load those data by directly using the load functions provided in Data.py: load_sim_data() and load_james_three(). The former loads the simulated sales data, along with net price and promotion indicator. The later loads three-pointer made per game of Lebron James in three seasons, along with minutes played and home court indicator. All these are illustrated in the final report, along with technical details of the model.
+
+(This repository was created for Sta 663 at Duke for final project, it is neither an offical publication for DCMMs, nor represents opinions of original authors (Lindsay Berry, Mike West). It uses pybats whose authors are Isaac Lavine and Andrew Cron.)
